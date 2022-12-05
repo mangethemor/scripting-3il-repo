@@ -47,9 +47,18 @@
 #     print(f"{number}. : {directory}")
 # print(f"Le contenu de mon répertoire : {list_dir}")
 
-#TP3
+# #TP3
+# import sys
+
+# directory_input, prenom, mon_age = sys.argv[1], sys.argv[2], sys.argv[3]
+
+# print(f"Votre répertoire : {directory_input}, votre prénom : {prenom}, votre âge : {mon_age}")
+
+# #avec with open pas besoin de close le fichier
+
+#TP4
 import sys
 
-directory_input, prenom, mon_age = sys.argv[1], sys.argv[2], sys.argv[3]
-
-print(f"Votre répertoire : {directory_input}, votre prénom : {prenom}, votre âge : {mon_age}")
+file_name, content = sys.argv[1], sys.argv[2]
+with open(file_name, "w") as f:
+    f.write(content)
