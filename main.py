@@ -50,4 +50,6 @@
 #TP3
 import sys
 
-print(sys.argv[1], sys.argv[2], sys.argv[3])
+directory_input, prenom, mon_age = sys.argv[1], sys.argv[2], sys.argv[3]
+
+print(f"Votre répertoire : {directory_input}, votre prénom : {prenom}, votre âge : {mon_age}")
