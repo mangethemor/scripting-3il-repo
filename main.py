@@ -59,6 +59,9 @@
 #TP4
 import sys
 
-file_name, content = sys.argv[1], sys.argv[2]
-with open(file_name, "w") as f:
-    f.write(content)
+file_name, content, content_end, looping = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+with open(file_name, "a") as f:
+    print(type(looping))
+    for i in range(int(looping)):
+        f.write(content+'\n')
+    f.write(content_end)
