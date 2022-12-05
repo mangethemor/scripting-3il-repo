@@ -1,3 +1,4 @@
+#Premier TP
 #a = ["a", "b", "c"]
 #b = 0
 #for enregistrements in a:
@@ -32,13 +33,13 @@
 #a = sys.stdin.readline() #Récupérer ce qui a été passé en entrée
 #print(a)
 
+#TP 2 
 import os
 import sys
 
 #print(sys.argv[0])
 #print(os.listdir("C:\\Users")) #Liste tous
 directory_input = sys.argv[1]
-#list_dir = os.listdir(directory_input)
 list_dir = os.listdir(directory_input)
 #print(list_dir)
 
