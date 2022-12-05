@@ -34,15 +34,20 @@
 #print(a)
 
 #TP 2 
-import os
+# import os
+# import sys
+
+# #print(sys.argv[0])
+# #print(os.listdir("C:\\Users")) #Liste tous
+# directory_input = sys.argv[1]
+# list_dir = os.listdir(directory_input)
+# #print(list_dir)
+
+# for number, directory in enumerate(list_dir):
+#     print(f"{number}. : {directory}")
+# print(f"Le contenu de mon répertoire : {list_dir}")
+
+#TP3
 import sys
 
-#print(sys.argv[0])
-#print(os.listdir("C:\\Users")) #Liste tous
-directory_input = sys.argv[1]
-list_dir = os.listdir(directory_input)
-#print(list_dir)
-
-for number, directory in enumerate(list_dir):
-    print(f"{number}. : {directory}")
-print(f"Le contenu de mon répertoire : {list_dir}")
+print(sys.argv[1], sys.argv[2], sys.argv[3])
