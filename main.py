@@ -107,7 +107,8 @@
 import sys
 def changestr(phrase):
     maj_count = 0
-    for word in phrase:
+    fouthword=phrase[0:3]
+    for word in fouthword:
         if word.isupper():
             maj_count= maj_count+1
     if maj_count >=2:
