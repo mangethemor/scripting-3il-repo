@@ -104,18 +104,41 @@
   
 #   return upper_count, lower_count
 
-import sys
-def changestr(phrase):
-    maj_count = 0
-    fouthword=phrase[0:3]
-    for word in fouthword:
-        if word.isupper():
-            maj_count= maj_count+1
-    if maj_count >=2:
-        print(phrase.upper())
-        #print(maj_phrase)
-    else:
-        print(phrase)
+# import sys
+# def changestr(phrase):
+#     maj_count = 0
+#     fouthword=phrase[0:3]
+#     for word in fouthword:
+#         if word.isupper():
+#             maj_count= maj_count+1
+#     if maj_count >=2:
+#         print(phrase.upper())
+#         #print(maj_phrase)
+#     else:
+#         print(phrase)
 
-str_chain = sys.argv[1]
-changestr(str_chain)
+# str_chain = sys.argv[1]
+# changestr(str_chain)
+
+#prendre un texte et le mettre dans une liste
+
+# def words_to_list(String)
+#     return String.split()
+# print(words_to_list("Bonjour les gens"))
+
+tab = ['2', '3', '4', '1', '6', '6', '13', '1', '45', '2']
+
+prec_enr = 0
+for enregistrement in tab:
+
+    if int(enregistrement) > int(prec_enr):
+        prec_enr = enregistrement
+
+print(prec_enr)
+
+#Solution
+def maxlist(list):
+
+    return max(list)
+
+print(maxlist([65,88,105,55,22,36]))
