@@ -103,3 +103,18 @@
 #       lower_count += 1
   
 #   return upper_count, lower_count
+
+import sys
+def changestr(phrase):
+    maj_count = 0
+    for word in phrase:
+        if word.isupper():
+            maj_count= maj_count+1
+    if maj_count >=2:
+        maj_phrase=phrase.upper()
+        print(maj_phrase)
+    else:
+        print(phrase)
+
+str_chain = sys.argv[1]
+changestr(str_chain)
