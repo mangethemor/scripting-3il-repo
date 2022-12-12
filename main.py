@@ -112,8 +112,8 @@ def changestr(phrase):
         if word.isupper():
             maj_count= maj_count+1
     if maj_count >=2:
-        maj_phrase=phrase.upper()
-        print(maj_phrase)
+        print(phrase.upper())
+        #print(maj_phrase)
     else:
         print(phrase)
 
