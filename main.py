@@ -57,11 +57,21 @@
 # #avec with open pas besoin de close le fichier
 
 #TP4
-import sys
+# import sys
 
-file_name, content, content_end, looping = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
-with open(file_name, "a") as f:
-    print(type(looping))
-    for i in range(int(looping)):
-        f.write(content+'\n')
-    f.write(content_end)
+# if sys.argv[4]:
+#     print("OK")
+# else:
+#     print("NON")
+
+# file_name, content, content_end, looping = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+
+# with open(file_name, "a") as f:
+#     print(type(looping))
+#     for i in range(int(looping)):
+#         f.write(content+'\n')
+#     f.write(content_end)
+
+#TP1(S2) le print
+
+print("Twinkle, twinkle, little star,\n         How I wonder what you are!\n                Up above the world so high,\n                Like a diamond in the sky. \n Twinkle, twinkle, little star,\n          How I wonder what you are")
