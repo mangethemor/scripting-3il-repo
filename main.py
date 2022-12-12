@@ -77,18 +77,29 @@
 
 
 #TP2(S2) fonction
-import sys
+# import sys
 
-def compteurMajMin(phrase):
-    maj = 0
-    min = 0
-    for word in phrase:
-        if word.lower() == word:
-            maj = maj + 1
-        if word.upper() == word:
-            min = min + 1
-    print(f"Il y a {maj} majuscules et {min} minuscules")
+# def compteurMajMin(phrase):
+#     maj = 0
+#     min = 0
+#     for word in phrase:
+#         if word.lower() == word:
+#             maj = maj + 1
+#         if word.upper() == word:
+#             min = min + 1
+#     print(f"Il y a {maj} majuscules et {min} minuscules")
 
-str_chain = sys.argv[1]
-compteurMajMin(str_chain)
+# str_chain = sys.argv[1]
+# compteurMajMin(str_chain)
 
+#Solution 
+# def count_letters(string):
+#   upper_count = 0
+#   lower_count = 0
+#   for char in string:
+#     if char.isupper():
+#       upper_count += 1
+#     elif char.islower():
+#       lower_count += 1
+  
+#   return upper_count, lower_count
