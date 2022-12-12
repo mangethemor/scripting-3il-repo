@@ -74,4 +74,21 @@
 
 #TP1(S2) le print
 
-print("Twinkle, twinkle, little star,\n         How I wonder what you are!\n                Up above the world so high,\n                Like a diamond in the sky. \n Twinkle, twinkle, little star,\n          How I wonder what you are")
+
+
+#TP2(S2) fonction
+import sys
+
+def compteurMajMin(phrase):
+    maj = 0
+    min = 0
+    for word in phrase:
+        if word.lower() == word:
+            maj = maj + 1
+        if word.upper() == word:
+            min = min + 1
+    print(f"Il y a {maj} majuscules et {min} minuscules")
+
+str_chain = sys.argv[1]
+compteurMajMin(str_chain)
+
