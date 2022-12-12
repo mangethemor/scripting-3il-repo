@@ -143,15 +143,27 @@
 
 # print(maxlist([65,88,105,55,22,36]))
 
-import argparse
+# import argparse
 
-parser = argparse.ArgumentParser(
-                    prog = 'Printeur',
-                    description = 'Print des emojis',
-                    )
+# parser = argparse.ArgumentParser(
+#                     prog = 'Printeur',
+#                     description = 'Print des emojis',
+#                     )
 
-parser.add_argument('-n', '--nombre', default=5, dest='nombre', type=int, choices=range(3,15))
-parser.add_argument('-e', '--emoji', dest='emoji')
-args = parser.parse_args()
-for i in range(0, int(args.nombre)):
-    print(args.emoji)
+# parser.add_argument('-n', '--nombre', default=5, dest='nombre', type=int, choices=range(3,15))
+# parser.add_argument('-e', '--emoji', dest='emoji')
+# args = parser.parse_args()
+# for i in range(0, int(args.nombre)):
+#     print(args.emoji)
+
+import sys
+
+filepath, search_word, replace_word = sys.argv[1], sys.argv[2], sys.argv[3]
+
+print(filepath, search_word, replace_word)
+
+with open(filepath, "r") as file_to_read:
+    for line in file_to_read:
+        replaced_line = line.replace(search_word,replace_word)
+with open(filepath, "a") as file_to_edit:
+    file_to_edit.write(replaced_line)
