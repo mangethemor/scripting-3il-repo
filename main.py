@@ -126,19 +126,32 @@
 #     return String.split()
 # print(words_to_list("Bonjour les gens"))
 
-tab = ['2', '3', '4', '1', '6', '6', '13', '1', '45', '2']
+# tab = ['2', '3', '4', '1', '6', '6', '13', '1', '45', '2']
 
-prec_enr = 0
-for enregistrement in tab:
+# prec_enr = 0
+# for enregistrement in tab:
 
-    if int(enregistrement) > int(prec_enr):
-        prec_enr = enregistrement
+#     if int(enregistrement) > int(prec_enr):
+#         prec_enr = enregistrement
 
-print(prec_enr)
+# print(prec_enr)
 
-#Solution
-def maxlist(list):
+# #Solution
+# def maxlist(list):
 
-    return max(list)
+#     return max(list)
 
-print(maxlist([65,88,105,55,22,36]))
+# print(maxlist([65,88,105,55,22,36]))
+
+import argparse
+
+parser = argparse.ArgumentParser(
+                    prog = 'Printeur',
+                    description = 'Print des emojis',
+                    )
+
+parser.add_argument('-n', '--nombre', default=5, dest='nombre', type=int, choices=range(3,15))
+parser.add_argument('-e', '--emoji', dest='emoji')
+args = parser.parse_args()
+for i in range(0, int(args.nombre)):
+    print(args.emoji)
